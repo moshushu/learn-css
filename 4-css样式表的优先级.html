@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>样式表的优先级</title>
+  <!-- <link rel="stylesheet" href="./4-css样式表的优先级.css"> -->
+  <style>
+    h1 {
+      color: red;
+    }
+  </style>
+  <link rel="stylesheet" href="./4-css样式表的优先级.css">
+</head>
+<body>
+  <!-- 行内样式优先级最高 -->
+  <h1 style="color: blue;">第一：大哥一起哈啤来比较样式表的优先级呗</h1>
+  <!-- 外部样式和内部样式优先级相等，谁最后生效就显示谁 -->
+  <h1>第二：大哥一起哈啤来比较样式表的优先级呗</h1>
+</body>
+</html>
