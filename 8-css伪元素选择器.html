@@ -5,8 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>伪元素选择器</title>
+  <style>
+    div {
+      height: 200px;
+      width: 200px;
+      /* background-color: aqua; */
+    }
+    
+    /* div::first-letter {
+      color: red;
+      font-size: 30px;
+    } */
+
+    /* div::first-line {
+      color: blue;
+    } */
+
+    /* div::before {
+      content: "我是向前添加的内容---《";
+      color: blueviolet;
+    }
+    div::after {
+      content: "》---我是向后添加的内容";
+      color: brown;
+    } */
+
+    /* selection 只支持color(文本颜色),background(背景),cursor(鼠标样式),outlin(描边效果)四种样式 */
+    div::selection {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-  <!-- 伪元素选择器 为一个元素的制定部分设置样式 -->
+  <!-- 伪元素选择器 主要应用来设置元素内文本的首字母，首行的样式，或是在元素内容的之前或之后插入其他内容 -->
+  <!-- 伪元素选择器包含一下几种： -->
+  <!-- 1、文本首字母  ::first-letter -->
+  <!-- 2、文本首行 ::first-line -->
+  <!-- 3、元素内容之前插入 ::before -->
+  <!-- 4、元素内容之后插入 ::after -->
+  <!-- 5、鼠标选中文本 ::selection -->
+  <div>
+    这是一首很美丽的诗：大概的内容就是，傻逼傻逼你是一个大傻逼
+  </div>
 </body>
 </html>

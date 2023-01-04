@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字体风格和样式简写</title>
+  <style>
+    p.a {
+      /* font-style: oblique;
+      font-weight: lighter;
+      font-variant: small-caps;
+      font-size: 30px;
+      line-height: 30px;
+      font-family: 华文仿宋; */
+      /* 等同于如下 */
+      font: oblique lighter normal small-caps 30px/30px 华文仿宋;
+    }
+    p.b {
+      font-style: italic;
+      font-weight: bold;
+    }
+    p.c {
+      font-style: normal;
+      font-weight: bolder;
+    }
+  </style>
+</head>
+<body>
+  <h3>字体简写 font: (style,variant,weight,size/line-height,family)</h3>
+  <!-- size 和 family 是必须的 -->
+  <hr />
+  <h4> font-style 字体风格</h4>
+  <ol>
+    <li>normal 正常</li>
+    <li>italic 斜体</li>
+    <li>oblique 斜体（但支持度较低）</li>
+  </ol>
+  <hr />
+  <p class="a">word正常</p>
+  <p class="b">斜体</p>
+  <p class="c">斜体2</p>
+  <hr />
+  <h4>weight 字体粗细</h4>
+  <table border="1">
+    <tr>
+      <td>名称</td>
+      <td>数值</td>
+    </tr>
+    <tr>
+      <td>lighter:细体</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>normal:正常</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>600</td>
+    </tr>
+    <tr>
+      <td>bold:加粗</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td>bolder:更粗</td>
+      <td>900</td>
+    </tr>
+  </table>
+  <hr />
+  <h4>font-variant 小型大写字符（只对字母有效）</h4> 
+</body>
+</html>

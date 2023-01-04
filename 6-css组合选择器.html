@@ -5,8 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>组合选择器</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    /* 后代选择器 */
+    div li p {
+      color: brown;
+    }
+    /* 子选择器 */
+    div>p {
+      color: blue;
+    }
+  </style>
 </head>
 <body>
-  <!-- 组合选择器 根据元素之间的特定关系来选择元素 -->
+  <!-- 组合选择器 根据元素之间的特定关系来选择元素 包含一下部分：-->
+  <!-- 后代选择器 空格链接  匹配作为指定元素后代的所有元素-->
+  <!-- 子选择器 '>'链接  只能选择作为某元素的子元素，不能选择到孙辈的元素-->
+  <!-- 相邻的兄弟选择器  '+'链接 -->
+  <!-- 一般兄弟选择器 '~'链接 -->
+  <div>
+    <h1>干你亮</h1>
+    <p>这是一个子选择器呀干你娘</p>
+    <ol>
+      <li><p>怎么说老大锅</p></li>
+      <li> <p>看着你好像很傻的样子</p></li>
+      <li><p>这都还学不会吗？真够笨的</p></li>
+    </ol>
+    
+  </div>
 </body>
 </html>

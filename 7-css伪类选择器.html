@@ -5,8 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>伪类选择器</title>
+  <style>
+    /* 点击前 */
+    a:link {
+      color: blue;
+    }
+    /* 点击后 */
+    a:visited {
+      color: green;
+    }
+    /* 悬停时 */
+    a:hover {
+      color: red;
+    }
+    /* 点击时 */
+    a:active {
+      color: hotpink; 
+    }
+
+    /* 应用到其他元素 */
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+    }
+
+    div:hover {
+      background-color: rebeccapurple;
+    }
+    div:active {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
 </head>
 <body>
   <!-- 伪类选择器 根据某种状态来选择元素 -->
+  <!-- 样例：点击文本时样式发生变化，鼠标悬停在文本时样式发生变化等等 -->
+  <!-- 伪类选择器的鼠标行为 -->
+  <!-- 1、鼠标点击前 :link-->
+  <!-- 2、鼠标点击后 :visited -->
+  <!-- 3、鼠标滑过（悬停）时 :hover -->
+  <!-- 4、鼠标点击时 :active -->
+  <!-- 四种鼠标行为一起使用时，需要按照顺序先后使用不然会导致某些行为不起作用 -->
+  <a href="">日你亮一起玩</a>
+  <!-- 伪类选择器除了应用在超链接外，还可以应用在其他元素上，但只能实现active（激活瞬间）和hover（悬停）的效果 -->
+  <div>
+    怎么说，大表锅
+  </div>
 </body>
 </html>

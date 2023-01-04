@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本对齐</title>
+  <style>
+    #p1 {
+      text-align: left;
+    }
+    #p2 {
+      text-align: center;
+    }
+    #p3 {
+      text-align: right;
+    }
+    div.a {
+      width: 200px;
+      background-color: red;
+    }
+    div.b {
+      text-align: justify;
+      width: 200px;
+      background-color: aqua;
+    }
+    /* 垂直对齐 */
+    img.a1 {
+      vertical-align: baseline;
+    }
+    img.a2 {
+      vertical-align: text-top;
+    }
+    img.a3 {
+      vertical-align: text-bottom;
+    }
+    img.a4 {
+      vertical-align: sub;
+    }
+    img.a5 {
+      vertical-align: super;
+    }
+  </style>
+</head>
+<body>
+  <h4>文本水平对齐: text-align</h4>
+  <ol>
+    <li>left 水平居左</li>
+    <li>right 水平居右</li>
+    <li>center 水平居中</li>
+    <li>justify 文本两端对齐</li>
+  </ol>
+
+  <hr />
+  <p id="p1">水平居左</p>
+  <p id="p2">水平居中</p>
+  <p id="p3">水平居右</p>
+
+  <br />
+
+  <div class="a">
+    no细心的读者可能发现了截图中的最后一行并没有实现两端对齐。这就是今天的重点了，
+    怎样让文本的最后一行也实现两端对齐呢？还是老套路：内部添加一个内联块元素，宽度设置width:100%,让最后一行变成倒数第二行，
+    问题就解决了。（当然了，如果是单独一行也是一样的套路）
+  </div>
+  <br />
+  <div class="b">
+    no细心的读者可能发现了截图中的最后一行并没有实现两端对齐。这就是今天的重点了，
+    怎样让文本的最后一行也实现两端对齐呢？还是老套路：内部添加一个内联块元素，宽度设置width:100%,让最后一行变成倒数第二行，
+    问题就解决了。（当然了，如果是单独一行也是一样的套路）
+  </div>
+
+  <hr />
+  <h4>文本垂直对齐: vertical-align</h4>
+  <ol>
+    <li>baseline 基线对齐</li>
+    <li>text-top 文本顶部对齐</li>
+    <li>text-bottom 文本底部对齐</li>
+    <li>sub 下角标对齐</li>
+    <li>super 上角标对齐</li>
+  </ol>
+  <hr />
+  <p> <img src="./images.jpeg" alt="" width="9" height="9" class="a1"> first1.该怎噩梦杨就行怎言样噶舒服撒</p>
+  <p> <img src="./images.jpeg" alt="" width="9" height="9" class="a2"> s2.大翻领宽松的感觉是来到佛平稳而非i家哦i就发生了的距离距离对方就够了记得发了几个i了睡觉哦皮肤松佩服你是v水利局</p>
+  <p> <img src="./images.jpeg" alt="" width="9" height="9" class="a3"> a3.方法就是破哦培训从婆婆课程v下哦贫困村v星空培训讲课了翻盖手机哦排水口圣诞节哦怕告诉大家哦苹果手机哦排水沟</p>
+  <p> <img src="./images.jpeg" alt="" width="9" height="9" class="a4"> r4.发迪斯雷利卢卡雷利舒服的快乐男声纽扣哦问卷哦是格利克曼了抗衰老抗辐射到了福利开始啦开始地方</p>
+  <p> <img src="./images.jpeg" alt="" width="9" height="9" class="a5"> t5.法国队送哦平常心看了重新看了看圣克鲁斯大家克里斯朵夫克里斯朵夫立牌坊数据库里都是v快乐</p>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本装饰</title>
+  <style>
+    #a {
+      /* text-decoration-line: overline;
+      text-decoration-color: aqua;
+      text-decoration-style: solid;
+      text-decoration-thickness: auto; */
+      /* 等同于 */
+      text-decoration: overline aqua solid;
+    }
+    #b {
+      text-decoration-line: line-through;
+      text-decoration-color: aquamarine;
+      text-decoration-style: double;
+      text-decoration-thickness: 3px;
+    }
+    #c {
+      text-decoration-line: underline;
+      text-decoration-color: blue;
+      text-decoration-style: dotted;
+      text-decoration-thickness: 50%;
+    }
+    h3 {
+      text-decoration-line: overline line-through underline;
+      text-decoration-color: violet;
+      text-decoration-style: dashed;
+    }
+    h4 {
+      color: deeppink;
+    }
+    /* 去除超链接下划线 */
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h4>text-decoration-line 文本添加装饰线</h4>
+  <ol>
+    <li>overline 文本上方添加装饰线</li>
+    <li>line-through 文本删除线效果 </li>
+    <li>underline 文本下划线效果</li>
+  </ol>
+  <h4>text-decoration-color 文本装饰线颜色</h4>
+  <h4>text-decoration-style 文本装饰线风格</h4>
+  <ol>
+    <li>solid 实线</li>
+    <li>double 双实线</li>
+    <li>dotted 圆点线</li>
+    <li>dashed 虚线</li>
+    <li>wavy 波浪线</li>
+  </ol>
+  <h4>text-decoration-thickness 文本装饰线的粗细</h4>
+  <h4>简化版书写： text-decoration: (line color style thickness)</h4>
+  <!-- line 是必填的 -->
+  <!-- 其他三个是选填的，顺序也是可以颠倒的 -->
+  <hr />
+  <h3>大合体</h3>
+  <p id="a">文本上方添加装饰线</p>
+  <p id="b">文本删除线效果</p>
+  <p id="c">文本下划线效果</p>
+  <hr />
+  <a href="">去除超链接下划线</a>
+</body>
+</html>

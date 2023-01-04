@@ -5,8 +5,53 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>属性选择器</title>
+  <style>
+    [type] {
+      width: 50px;
+      height: 50px;
+    }
+    [class="name"] {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+    [class~="sex"] {
+      width: 150px;
+      height: 150px;
+      background-color: rebeccapurple;
+    }
+    [class|="chen"] {
+      width: 200px;
+      height: 200px;
+      background-color: brown;
+    }
+  </style>
 </head>
 <body>
   <!-- 属性选择器 根据一个属性或属性值来选择元素 -->
+  <!-- 属性选择期包含以下四种： -->
+  <ol>
+    <li>[a属性]:带有a属性所有元素</li>
+    <li>[a属性="value"]:带有a属性，并且属性值为value的元素</li>
+    <li>[a属性~="value"]:带有a属性，并且多个属性值中包含value值的元素</li>
+    <li>[a属性|="value"]:带有a属性，并且属性值为value或以value-开头的元素</li>
+  </ol>
+  <hr />
+
+  姓名：<input type="text">
+  年龄：<input type="text">
+  <br />
+  <div class="name">
+    怎么说
+  </div>
+  <div class="sex first">
+    就这样吧
+  </div>
+  <div class="chen-jiating">
+    毁灭吧
+  </div>
+  <div class="chen">
+    去你妈的
+  </div>
 </body>
 </html>
