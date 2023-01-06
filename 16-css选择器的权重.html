@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css选择器的权重</title>
+  <style>
+    /* #xixi {
+      color: brown;
+    } */
+    /* .haha {
+      color: salmon;
+    } */
+    /* h1 {
+      color: aqua;
+    } */
+    /* * {
+      color: yellow;
+    } */
+  </style>
+</head>
+<body>
+  <h2>选择器优先级：</h2>
+  <p>行内样式 > id选择器 > class选择器 > 元素选择器 > 通用选择器</p>
+  <br />
+  <h2>选择器的权重计算：</h2>
+  <table border="1">
+    <tr>
+      <td></td>
+      <td>选择器</td>
+      <td>例子</td>
+      <td>权重值</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>通用选择器</td>
+      <td>*</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>元素选择器</td>
+      <td>h1,div,p</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>类选择器</td>
+      <td>.light</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>ID选择器</td>
+      <td>#box</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>行内选择器</td>
+      <td>h1 style="..."</td>
+      <td>1000</td>
+    </tr>
+  </table>
+  <hr />
+  <!-- <h1 class="haha" id="xixi" style="color: blue;">怎么说呢？大哥大吗？</h1> -->
+  <h1 class="haha" id="xixi" >怎么说呢？大哥大吗？</h1>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css边框</title>
+  <style>
+    h2 {
+      color: blueviolet;
+    }
+    h3 {
+      color: brown;
+    }
+    p.dotted {
+      border-style: dotted;
+      border-width: thin;
+    }
+    p.dashed {
+      border-style: dashed;
+      border-width: thick;
+      border-color: red blue yellow green;
+    }
+    p.solid {
+      border-style: solid;
+      border-width: medium;
+    }
+    p.double {
+      border-style: double;
+    }
+    p.none {
+      border-style: none;
+    }
+    p.hidden {
+      border-style: hidden;
+    }
+    /* 分别定义四条边框 */
+    p.four {
+      border-top-style: dashed;
+      border-right-style: dotted;
+      border-bottom-style: double;
+      border-left-style: solid;
+    }
+    /* 速记边框 */
+    p.suji {
+      border: thin solid red;
+    }
+    /* 四条边框速记 */
+    p.four-suji {
+      border-top: thin solid rebeccapurple;
+      border-right: thick dotted darkblue;
+      border-left: thick dotted darkcyan;
+      border-bottom: medium solid gray;
+    }
+  </style>
+</head>
+<body>
+  <h2>border 边框属性速记</h2>
+  <ol>
+    <li>border: border-width border-style border-color;</li>
+    <li>border: 宽度 样式 颜色</li>
+    <li>border: 5px solid red;</li>
+    <li>border-style是必填的</li>
+  </ol>
+  <h2>四条边框属性分别速记</h2>
+  <ol>
+    <li>border-top 上边</li>
+    <li>border-left 左边</li>
+    <li>border-right 右边</li>
+    <li>border-bottom 下边</li>
+  </ol>
+  <h3>border-style 边框:</h3>
+  <ol>
+    <li>dotted 点状边框</li>
+    <li>dashed 虚线边框</li>
+    <li>solid 实线边框</li>
+    <li>double 双线边框</li>
+    <li>none 无边框</li>
+    <li>hidden 隐藏边框</li>
+  </ol>
+  <h3>可分别设置边框的四条边框:</h3>
+  <ol>
+    <li>border-top-style 上边框</li>
+    <li>border-right-style 右边框</li>
+    <li>border-bottom-style 下边框</li>
+    <li>border-left-style 左边框</li>
+  </ol>
+  <h3>分别设置四条边框的简写方法:</h3>
+  <ol>
+    <li>border-style: 上边 右边 下边 左边</li>
+    <li>border-style: 上边 左右边 下边</li>
+    <li>border-style: 上下边 左右边</li>
+  </ol>
+  <h3>border-width 边框宽度:</h3>
+  <ol>
+    <li>thin 薄</li>
+    <li>medium 中</li>
+    <li>thick 厚</li>
+    <li>px或者em</li>
+  </ol>
+  <h3>border-width的简写方法与border-style的简写方法是一致的</h3>
+  <ol>
+    <li>border-width: 5px 5px 5px 5px</li>
+    <li>...</li>
+  </ol>
+  <h3>border-color 边框颜色</h3>
+  <h3>border-color 的简写方法与border-style的简写方法也是一致的</h3>
+  <ol>
+    <li>border-color: red blue yellow green</li>
+    <li>...</li>
+  </ol>
+  <hr />
+  <p class="dotted">点状</p>
+  <p class="dashed">虚线</p>
+  <p class="solid">实线</p>
+  <p class="double">双线</p>
+  <p class="none">无边框</p>
+  <p class="hidden">隐藏边框</p>
+  <p class="four">分别定义四条边框</p>
+  <p class="suji">速记边框</p>
+  <p class="four-suji">四条边框速记</p>
+  <hr />
+  
+</body>
+</html>
