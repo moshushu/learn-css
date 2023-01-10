@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>视觉差效果</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    html,body {
+      height: 100%;
+    }
+    div {
+      height: 100%;
+    }
+    .box1 {
+      background: rebeccapurple url(./视觉差1.png) no-repeat fixed;
+      /* 使背景铺满整个容器 */
+      background-size: cover;
+    }
+    .box2 {
+      background: red url(./视觉差2.jpg) no-repeat fixed;
+      /* 使背景铺满整个容器 */
+      background-size: cover;
+    }
+    .box3 {
+      background: yellowgreen url(./视觉差3.jpg) no-repeat fixed;
+      /* 使背景铺满整个容器 */
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- 视觉差效果的实现，起主要作用的是固定背景图，即background-attachment: fixed;-->
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+</body>
+</html>
