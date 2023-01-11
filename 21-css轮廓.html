@@ -5,8 +5,73 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>css轮廓</title>
+  <style>
+    h2 {
+      color: brown;
+    }
+    h3 {
+      color: chocolate;
+    }
+    .a1 {
+      outline-style: dotted;
+      outline-color: red;
+      outline-width: 2px;
+      outline-offset: 10px;
+    }
+    .a2 {
+      /* outline-style: dashed;
+      outline-color: aqua;
+      outline-width: thick; */
+      outline: aqua dashed thick;
+    }
+    .a3 {
+      outline-style: solid;
+      outline-color: blue;
+      outline-width: thin;
+    }
+    .a4 {
+      outline-style: double;
+      outline-color: blueviolet;
+      outline-width: medium;
+    }
+    .a5 {
+      outline-style: none;
+    }
+    .a6 {
+      outline-style: hidden;
+    }
+  </style>
 </head>
 <body>
-  
+  <h2>outline 轮廓简写</h2>
+  <ol>
+    <li>outline: width style color</li>
+    <li>outline: 宽度 样式 颜色</li>
+  </ol>
+  <h3>outline-style 轮廓样式</h3>
+  <ol>
+    <li>dotted 点状轮廓</li>
+    <li>dashed 虚线轮廓</li>
+    <li>solid  实线轮廓</li>
+    <li>double 双线轮廓</li>
+    <li>none   无轮廓</li>
+    <li>hidden 隐藏轮廓</li>
+  </ol>
+  <h3>outline-width 轮廓宽度</h3>
+  <ol>
+    <li>thin 1px</li>
+    <li>medium 3px</li>
+    <li>thick 5px</li>
+    <li>一个特定的尺寸：以px，em为单位</li>
+  </ol>
+  <h3>outline-color 轮廓颜色</h3>
+  <h3>outline-offset 轮廓与元素边界之间的空间</h3>
+  <hr />
+  <p class="a1">点状</p>
+  <p class="a2">虚线</p>
+  <p class="a3">实线</p>
+  <p class="a4">双线</p>
+  <p class="a5">无轮廓</p>
+  <p class="a6">隐藏轮廓</p>
 </body>
 </html>

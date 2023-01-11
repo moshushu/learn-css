@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css 边距</title>
+  <style>
+    h2 {
+      color: brown;
+    }
+    h3 {
+      color: blueviolet;
+    }
+    div {
+      border: 1px solid red;
+      /* margin: 100px 100px 150px 80px; */
+      /* margin-top: 100px;
+      margin-right: 100px;
+      margin-bottom: 150px;
+      margin-left: 80px; */
+      background-color: aqua;
+      /* auto测试 */
+      margin: auto;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <h2>margin</h2>
+    <ol>
+      <li>auto：浏览器自动计算的边距（水平居中）</li>
+      <li>length：以px，pt，cm等单位</li>
+      <li>%：父元素宽度的百分比</li>
+    </ol>
+    <ul>
+      <li>margin: 上 右 下 左</li>
+      <li>margin: 上 左右 下</li>
+      <li>margin: 上下 左右</li>
+      <li>margin: 上下左右</li>
+    </ul>
+  <h3>css 边距</h3>
+  <ol>
+    <li>margin-top 上边距</li>
+    <li>margin-bottom 下边距</li>
+    <li>margin-left 左边距</li>
+    <li>margin-right 右边距</li>
+  </ol>
+  <hr />
+  <div>
+    这是一个边距测试
+  </div>
+  <hr />
+  <h3>边距塌陷</h3>
+  <ol>
+    <li>两个相邻元素的边距会重合，只取最大的边距作为最终边距，并不会两个边距相加</li>
+    <li>边距塌陷只会发生在上下边距，不会发生在左右边距</li>
+  </ol>
+</body>
+</html>
