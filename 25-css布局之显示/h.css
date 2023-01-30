@@ -1,0 +1,23 @@
+* {
+  height: 100%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rebeccapurple;
+}
+
+div {
+  width: auto;
+  height: 220px;
+}
+
+#js1 {
+  display: none;
+}
+
+#js2 {
+  visibility: hidden;
+  /* visibility: visible; */
+}

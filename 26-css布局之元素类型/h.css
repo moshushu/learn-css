@@ -1,0 +1,39 @@
+body {
+  height: 100%;
+}
+
+.inline, .block, .inline-block {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  background-color: antiquewhite;
+  padding: 0px;
+}
+
+.inline span {
+  background-color: aqua;
+  width: 50px;  /* 无效*/
+  height: 50px; /* 无效*/
+  border: 1px solid rebeccapurple;
+  padding: 20px;
+  margin: 30px; /* 只能设置左右方向的外边距 */
+}
+
+.block div {
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  border: 1px solid blue;
+  padding: 20px;
+  margin: 30px;
+}
+
+.inline-block div {
+  display: inline-block;
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  border: 1px solid blue;
+  padding: 10px;
+  margin: 10px;
+}
