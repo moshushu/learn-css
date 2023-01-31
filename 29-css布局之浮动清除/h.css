@@ -1,0 +1,81 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.box, .box1 {
+  width: 30%;
+  margin: 20px auto;
+}
+
+.box > div {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.box .a1 {
+  width: 25%;
+  background-color: yellow;
+  float: left;
+}
+
+.box .a2{
+  width: 50%;
+  background: orange;
+  float: left;
+}
+
+.box .a3 {
+  width: 25%;
+  background: yellow;
+  float: left;
+}
+
+.box .a4{
+  height: 200px;
+  background: hotpink;
+}
+
+/* 清除浮动 */
+.box1 > .m1 {
+  /* 浮动清除方法一 */
+  /* 
+    浮动元素由于不占用空间，故无法撑开父元素高度，
+    可以采用overflow: auto;来解决。
+  */
+  /* overflow: auto; */
+}
+
+.m1 > div {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.box1 .a1 {
+  width: 25%;
+  background-color: yellow;
+  float: left;
+}
+
+.box1 .a2 {
+  width: 50%;
+  background: orange;
+  float: left;
+}
+
+.box1 .a3 {
+  width: 25%;
+  background: yellow;
+  float: left;
+}
+
+.box1 .a4 {
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  background: hotpink;
+  /* 浮动清除方法二 */
+  clear: left;
+}

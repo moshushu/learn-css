@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浮动清除</title>
+  <link rel="stylesheet" href="./h.css">
+</head>
+<body>
+  <div class="box">
+    <div class="a1">
+      float1
+    </div>
+    <div class="a2">
+      float2
+    </div>
+    <div class="a3">
+      float3
+    </div>
+    <!-- 需要浮动清除的原因 -->
+    <div class="a4">
+      float4
+    </div>
+  </div>
+
+  <hr />
+  <h3>清除浮动有两种方法：</h3>
+  <ol>
+    <li>将需要浮动的元素放置到一个div中，此div不设置浮动即可。需要注意的是：需要给该div设置高度，由于浮动元素不占空间，故不会撑开父元素。技巧是设置overflow：auto; </li>
+    <li>给需要清除浮动的元素添加clear属性，属性值取决于最靠近该元素的浮动元素的浮动属性值</li>
+  </ol>
+  <h4>clear属性 清除浮动</h4>
+  <ol>
+    <li>left 清除左浮动</li>
+    <li>right 清除右浮动</li>
+    <li>bath 同时清除左右浮动</li>
+  </ol>
+  <hr />
+  <div class="box1">
+    <div class="m1">
+      <div class="a1">
+        float1
+      </div>
+      <div class="a2">
+        float2
+      </div>
+      <div class="a3">
+        float3
+      </div>
+    </div>
+    <!-- 需要浮动清除的原因 -->
+    <div class="a4">
+      float4
+    </div>
+  </div>
+
+</body>
+</html>

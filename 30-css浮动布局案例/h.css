@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.top {
+  list-style-type: none;
+  background-color: #777;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.top li {
+  float: left;
+}
+
+.top li a {
+  /* 由于a标签是行内元素无法设置宽高，需要将a元素设置为行内块元素显示*/
+  display: inline-block;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  /* 去除下划线 */
+  text-decoration: none;
+}
+
+.top li a.active {
+  background-color: green;
+}
+
+.content > div {
+  float: left;
+}
+
+.left {
+  width: 25%;
+}
+
+.body-left {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.body-left li a {
+  color: white;
+  background-color: slategrey;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+
+.right {
+  width: 75%;
+}
+
+.city {
+  color: white;
+  background-color: blue;
+  text-align: center;
+  margin: 10px;
+  padding: 0;
+  line-height: 150px;
+}
+
