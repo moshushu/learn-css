@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* 导航栏 */
+.top {
+  background-color: #777;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  list-style-type: none;
+}
+
+.top li {
+  float: left;
+}
+
+.top li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px;
+  text-align: center;
+  color: white;
+}
+
+.top li a.active {
+  background-color: rebeccapurple;
+}
+
+/* 页面主体 */
+.content {
+  margin: 0;
+  padding: 15px;
+  float: left;
+}
+/* 左侧导航栏 */
+.left {
+  width: 25%;
+}
+
+.left ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.left li {
+  margin-bottom: 4px;
+}
+
+.left li a {
+  text-decoration: none;
+  display: block;
+  background-color: rgb(250, 240, 240);
+  color: rgb(48, 35, 10);
+  padding: 8px;
+}
+
+.left li a.active {
+  background-color: rgb(39, 168, 188);
+  color: white;
+}
+
+.left li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+/* 右侧内容 */
+.right {
+  width: 75%;
+}
+
+.header {
+  background-color: rgb(0, 238, 255);
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+
+/* 页脚 */
+.footed {
+  background-color: #444;
+  color: white;
+  clear: both;
+  padding: 15px;
+}

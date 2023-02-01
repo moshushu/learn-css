@@ -8,10 +8,10 @@ body {
 
 .top {
   list-style-type: none;
-  background-color: #777;
-  overflow: auto;
   margin: 0;
   padding: 0;
+  background-color: #777;
+  overflow: auto;
 }
 
 .top li {
@@ -22,8 +22,8 @@ body {
   /* 由于a标签是行内元素无法设置宽高，需要将a元素设置为行内块元素显示*/
   display: inline-block;
   color: white;
-  padding: 16px;
   text-align: center;
+  padding: 16px;
   /* 去除下划线 */
   text-decoration: none;
 }
@@ -32,40 +32,61 @@ body {
   background-color: green;
 }
 
-.content > div {
+/* 主体页面 */
+/* 左侧导航和内容区域公共的样式 */
+.content {
   float: left;
+  padding: 15px;
 }
 
+/* 左侧导航 */
 .left {
   width: 25%;
 }
 
-.body-left {
+.left ul {
   list-style-type: none;
   margin: 0;
-  padding: 10px;
+  padding: 0;
 }
 
-.body-left li a {
-  color: white;
-  background-color: slategrey;
+.left li a {
+  margin-bottom: 4px;
+  /* 将a标签（行内元素）转为块元素使其可以设置其他样式 */
   display: block;
+  padding: 8px;
+  background-color: #eee;
+  color: #666;
   text-decoration: none;
-  padding: 10px;
-  margin-bottom: 5px;
 }
 
+.left li a:hover {
+  background-color: #555;
+  color: white;
+}
 
+.left li a.active {
+  background-color: rgba(82, 197, 250, 0.506);
+  color: white;
+}
+
+/* 内容区域 */
 .right {
   width: 75%;
 }
 
-.city {
-  color: white;
-  background-color: blue;
+.header {
+  background-color: rgb(78, 201, 214);
   text-align: center;
-  margin: 10px;
-  padding: 0;
-  line-height: 150px;
+  color: white;
+  padding: 15px;
 }
 
+/* 页面底部 */
+.footed {
+  background-color: #777;
+  color: white;
+  /* 添加padding可以是元素垂直剧中 */
+  padding: 15px;
+  clear: both;
+}
