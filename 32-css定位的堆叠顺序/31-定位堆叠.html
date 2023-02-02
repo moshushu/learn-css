@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>定位堆叠</title>
+  <link rel="stylesheet" href="./h.css">
+</head>
+<body>
+  <h3>z-index z轴，决定堆叠顺序</h3>
+    <ul>
+      <li>z-index 的值为具体的数字，如10，20等</li>
+      <li>z-index的值越大，越在上层</li>
+      <li>z-index 无法改变父元素与子元素的堆叠方式，子元素默认堆叠在父元素上面</li>
+      <li>z-index 改表的是同级元素的堆叠方式</li>
+    </ul>
+
+  <hr />
+    <div class="box1">
+      盒子1
+      <div class="box2">
+        盒子2
+      </div>
+      <div class="box3">
+        盒子3
+      </div>
+    </div>
+    <div class="box4">
+      盒子四
+    </div>
+</body>
+</html>
