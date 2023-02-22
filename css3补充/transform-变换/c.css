@@ -1,0 +1,17 @@
+div {
+  border: solid 1px saddlebrown;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+  margin-left: 200px;
+}
+
+.b {
+  /* 旋转 */
+  /* transform: rotate(45deg); */
+  /* 偏移 */
+  /* transform: translate(10px,20px); */
+  /* 缩放1.2倍 */
+  transform: scale(1.2,1.2);
+}
